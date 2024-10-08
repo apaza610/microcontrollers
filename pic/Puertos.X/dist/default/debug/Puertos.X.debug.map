@@ -1,0 +1,98 @@
+Microchip MPLAB XC8 PIC(R) Assembler V2.46
+
+Linker command line:
+
+-W-3 \
+  --edf=C:\Program Files\Microchip\xc8\v2.46\pic\dat\20240104201356_en.msgs \
+  -cs -h+dist/default/debug\Puertos.X.debug.sym \
+  --cmf=dist/default/debug\Puertos.X.debug.cmf -z -Q12F675 \
+  -oC:\Users\win\AppData\Local\Temp\xcAsabk.\driver_tmp_3.o \
+  --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
+  -Mdist/default/debug/Puertos.X.debug.map -E1 --acfsm=1493 \
+  -ACODE=00h-03FFh -ASTRCODE=00h-03FFh -ASTRING=00h-0FFhx4 \
+  -ACONST=00h-0FFhx4 -AENTRY=00h-0FFhx4 -ABANK0=020h-05Dh -ARAM=020h-05Dh \
+  -AABS1=020h-05Fh -ACOMMON=05Eh-05Fh -ASFR0=00h-01Fh -ASFR1=080h-0DDh \
+  -ACONFIG=02007h-02007h -DCONFIG=2 -AIDLOC=02000h-02003h -DIDLOC=2 \
+  -AEEDATA=00h-07Fh/02100h -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 \
+  -DCONST=2 -DENTRY=2 build/default/debug/Programa.o 
+
+Object code version is 3.11
+
+Machine type is 12F675
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+build/default/debug/Programa.o
+                config                             2007     2007        1        0       4
+                edata                                 0     2100        1     4200       3
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   BANK0          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+
+        CLASS   COMMON         
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         4
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+                edata                                 0     2100        1         3
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                edata                          002100  000001  002101      4200       3  EEDATA      2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0020-005D             3E           1
+        CODE             0000-03FF            400           2
+        COMMON           005E-005F              2           1
+        CONST            0000-03FF            100           2
+        EEDATA           2101-217F             7F           2
+        ENTRY            0000-03FF            100           2
+        IDLOC            2000-2003              4           2
+        RAM              0020-005D             3E           1
+        SFR0             0000-001F             20           1
+        SFR1             0080-00DD             5E           1
+        STRCODE          0000-03FF            400           2
+        STRING           0000-03FF            100           2
+
+                                  Symbol Table
+
+__H__absolute__ __absolute__ 0000  __Hcode         code         0000
+__Hconfig       config       2008  __Hdata         data         0000
+__Hedata        edata        0000  __Hspace_0      (abs)        0000
+__Hspace_1      (abs)        0000  __Hspace_3      (abs)        0001
+__Hspace_4      (abs)        400F  __Hudata        udata        0000
+__Hudata_bank0  udata_bank0  0000  __L__absolute__ __absolute__ 0000
+__Lcode         code         0000  __Lconfig       config       0000
+__Ldata         data         0000  __Ledata        edata        0000
+__Lspace_0      (abs)        0000  __Lspace_1      (abs)        0000
+__Lspace_3      (abs)        0000  __Lspace_4      (abs)        0000
+__Ludata        udata        0000  __Ludata_bank0  udata_bank0  0000
+__S0            (abs)        0000  __S1            (abs)        0000
+__S3            (abs)        2101  
