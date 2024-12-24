@@ -1,0 +1,15 @@
+Message[301] C:\PROGRAM FILES\MICROCHIP\MPASM SUITE\P16F77.INC 33 : MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
+Warning[205] D:\MISAPPSUCTRL\PIC\INFRAROJO\MACROSAPZ.INC 10 : Found directive in column 1. (ENDM)
+Warning[205] D:\MISAPPSUCTRL\PIC\INFRAROJO\MACROSAPZ.INC 15 : Found directive in column 1. (ENDM)
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 41 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 42 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 48 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 51 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\MACROSAPZ.INC 14 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 59 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 60 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 67 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 73 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 97 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 108 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\MISAPPSUCTRL\PIC\INFRAROJO\INFRAROJO.ASM 178 : Register in operand not in bank 0.  Ensure that bank bits are correct.

@@ -11,8 +11,8 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$build/default/debug/Programa.o
-edata EEDATA 3 0 2100 1 2 1
+$build/default/debug/_ext/946939410/Programa.o
+MyCode CODE 0 0 0 9 2 1
 config CONFIG 4 2007 2007 1 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -22,16 +22,16 @@ config CONFIG 4 2007 2007 1 2 1
 %UNUSED
 RAM 20-5D 1
 BANK0 20-5D 1
-CONST 0-3FF 2
-ENTRY 0-3FF 2
+CONST 9-3FF 2
+ENTRY 9-3FF 2
 IDLOC 2000-2003 2
-CODE 0-3FF 2
-SFR0 0-1F 1
+CODE 9-3FF 2
+SFR0 12-1F 1
 SFR1 80-DD 1
 COMMON 5E-5F 1
-EEDATA 2101-217F 2
-STRCODE 0-3FF 2
-STRING 0-3FF 2
+EEDATA 2100-217F 2
+STRCODE 9-3FF 2
+STRING 9-3FF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -45,6 +45,16 @@ STRING 0-3FF 2
 # are in ascending order of addresses.
 # All other numeric values are in decimal.
 %LINETAB
+$build/default/debug/_ext/946939410/Programa.o
+0 MyCode CODE >14:E:/microController/pic/Puertos.X/Programa.s
+1 MyCode CODE >15:E:/microController/pic/Puertos.X/Programa.s
+2 MyCode CODE >16:E:/microController/pic/Puertos.X/Programa.s
+3 MyCode CODE >17:E:/microController/pic/Puertos.X/Programa.s
+4 MyCode CODE >18:E:/microController/pic/Puertos.X/Programa.s
+5 MyCode CODE >19:E:/microController/pic/Puertos.X/Programa.s
+6 MyCode CODE >20:E:/microController/pic/Puertos.X/Programa.s
+7 MyCode CODE >22:E:/microController/pic/Puertos.X/Programa.s
+8 MyCode CODE >23:E:/microController/pic/Puertos.X/Programa.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -57,30 +67,32 @@ STRING 0-3FF 2
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__Hspace_0 0 0 ABS 0 - -
+__Hspace_0 12 0 ABS 0 - -
 __Hspace_1 0 0 ABS 0 - -
-__Hspace_3 1 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
 __Hspace_4 400F 0 ABS 0 - -
-__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank0 12 0 ABS 0 udata_bank0 -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
-__Hedata 0 0 ABS 0 edata -
-__Hudata 0 0 ABS 0 udata -
+__HMyCode 12 0 CODE 0 MyCode -
+__Hedata 12 0 ABS 0 edata -
+__Hudata 12 0 ABS 0 udata -
 __Hconfig 4010 0 CONFIG 4 config -
-__Ledata 0 0 ABS 0 edata -
-__Ludata 0 0 ABS 0 udata -
-__Hcode 0 0 ABS 0 code -
-__Hdata 0 0 ABS 0 data -
-__Lcode 0 0 ABS 0 code -
-__Ldata 0 0 ABS 0 data -
+__LMyCode 0 0 CODE 0 MyCode -
+__Ledata 12 0 ABS 0 edata -
+__Ludata 12 0 ABS 0 udata -
+__Hcode 12 0 ABS 0 code -
+__Hdata 12 0 ABS 0 data -
+__Lcode 12 0 ABS 0 code -
+__Ldata 12 0 ABS 0 data -
 __S0 0 0 ABS 0 - -
 __S1 0 0 ABS 0 - -
-__S3 2101 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
 __Lconfig 0 0 CONFIG 4 config -
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank0 12 0 ABS 0 udata_bank0 -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
@@ -106,7 +118,7 @@ __H__absolute__ 0 0 ABS 0 __absolute__ -
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-edata 3 0 4200 1 2
+MyCode 0 0 0 9 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

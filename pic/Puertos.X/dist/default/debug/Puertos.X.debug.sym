@@ -1,28 +1,41 @@
 __S0 0 0 ABS 0
 __S1 0 0 ABS 0
-__S3 2101 0 ABS 0
+__S3 0 0 ABS 0
+__HMyCode 9 0 CODE 0
+__LMyCode 0 0 CODE 0
 __Hconfig 2008 0 CONFIG 4
 __Lconfig 0 0 CONFIG 4
-__Hcode 0 0 ABS 0
-__Lcode 0 0 ABS 0
-__Hdata 0 0 ABS 0
-__Ldata 0 0 ABS 0
-__Hudata_bank0 0 0 ABS 0
-__Ludata_bank0 0 0 ABS 0
+__Hcode 12 0 ABS 0
+__Lcode 12 0 ABS 0
+__Hdata 12 0 ABS 0
+__Ldata 12 0 ABS 0
+__Hudata_bank0 12 0 ABS 0
+__Ludata_bank0 12 0 ABS 0
 __H__absolute__ 0 0 ABS 0
 __L__absolute__ 0 0 ABS 0
-__Hedata 0 0 ABS 0
-__Ledata 0 0 ABS 0
-__Hudata 0 0 ABS 0
-__Ludata 0 0 ABS 0
-__Hspace_0 0 0 ABS 0
+__Hedata 12 0 ABS 0
+__Ledata 12 0 ABS 0
+__Hudata 12 0 ABS 0
+__Ludata 12 0 ABS 0
+__Hspace_0 12 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __Hspace_1 0 0 ABS 0
 __Lspace_1 0 0 ABS 0
-__Hspace_3 1 0 ABS 0
+__Hspace_3 0 0 ABS 0
 __Lspace_3 0 0 ABS 0
 __Hspace_4 400F 0 ABS 0
 __Lspace_4 0 0 ABS 0
 %segments
-edata 0 1 EEDATA 4200 3
+MyCode 0 11 CODE 0 0
 %locals
+build/default/debug/_ext/946939410/Programa.o
+E:/microController/pic/Puertos.X/Programa.s
+14 0 0 CODE 0
+15 1 0 CODE 0
+16 2 0 CODE 0
+17 3 0 CODE 0
+18 4 0 CODE 0
+19 5 0 CODE 0
+20 6 0 CODE 0
+22 7 0 CODE 0
+23 8 0 CODE 0

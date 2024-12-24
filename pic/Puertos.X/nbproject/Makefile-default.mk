@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Programa.asm
+SOURCEFILES_QUOTED_IF_SPACED=E:/microController/pic/Puertos.X/Programa.s
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Programa.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Programa.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/946939410/Programa.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/946939410/Programa.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Programa.o
+OBJECTFILES=${OBJECTDIR}/_ext/946939410/Programa.o
 
 # Source Files
-SOURCEFILES=Programa.asm
+SOURCEFILES=E:/microController/pic/Puertos.X/Programa.s
 
 
 
@@ -89,22 +89,22 @@ FINAL_IMAGE_NAME_MINUS_EXTENSION=${DISTDIR}/Puertos.X.${IMAGE_TYPE}
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: pic-as-assembler
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/Programa.o: Programa.asm  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Programa.o 
+${OBJECTDIR}/_ext/946939410/Programa.o: E:/microController/pic/Puertos.X/Programa.s  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/946939410" 
+	@${RM} ${OBJECTDIR}/_ext/946939410/Programa.o 
 	${MP_AS} -mcpu=PIC12F675 -c \
-	-o ${OBJECTDIR}/Programa.o \
-	Programa.asm \
-	 -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
+	-o ${OBJECTDIR}/_ext/946939410/Programa.o \
+	E:/microController/pic/Puertos.X/Programa.s \
+	 -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp -Wl,-pMyCode=0h
 	
 else
-${OBJECTDIR}/Programa.o: Programa.asm  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/Programa.o 
+${OBJECTDIR}/_ext/946939410/Programa.o: E:/microController/pic/Puertos.X/Programa.s  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/946939410" 
+	@${RM} ${OBJECTDIR}/_ext/946939410/Programa.o 
 	${MP_AS} -mcpu=PIC12F675 -c \
-	-o ${OBJECTDIR}/Programa.o \
-	Programa.asm \
-	  -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
+	-o ${OBJECTDIR}/_ext/946939410/Programa.o \
+	E:/microController/pic/Puertos.X/Programa.s \
+	  -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp -Wl,-pMyCode=0h
 	
 endif
 
@@ -115,13 +115,13 @@ ${DISTDIR}/Puertos.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/M
 	@${MKDIR} ${DISTDIR} 
 	${MP_LD} -mcpu=PIC12F675 ${OBJECTFILES_QUOTED_IF_SPACED} \
 	-o ${DISTDIR}/Puertos.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} \
-	 -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -mcallgraph=std -Wl,-Map=${FINAL_IMAGE_NAME_MINUS_EXTENSION}.map -mno-download-hex
+	 -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -mcallgraph=std -Wl,-Map=${FINAL_IMAGE_NAME_MINUS_EXTENSION}.map -mno-download-hex -Wl,-pMyCode=0h
 else
 ${DISTDIR}/Puertos.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} ${DISTDIR} 
 	${MP_LD} -mcpu=PIC12F675 ${OBJECTFILES_QUOTED_IF_SPACED} \
 	-o ${DISTDIR}/Puertos.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} \
-	  -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -mcallgraph=std -Wl,-Map=${FINAL_IMAGE_NAME_MINUS_EXTENSION}.map -mno-download-hex
+	  -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -mcallgraph=std -Wl,-Map=${FINAL_IMAGE_NAME_MINUS_EXTENSION}.map -mno-download-hex -Wl,-pMyCode=0h
 endif
 
 

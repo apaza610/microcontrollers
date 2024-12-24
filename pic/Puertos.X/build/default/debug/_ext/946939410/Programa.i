@@ -1,21 +1,17 @@
-# 1 "Programa.asm"
+# 1 "E:/microController/pic/Puertos.X/Programa.s"
 # 1 "<built-in>" 1
-# 1 "Programa.asm" 2
-  ;__CONFIG _CP_OFF & _WDT_OFF & _PWRTE_ON & _XT_OSC ; Configuracion Fuses
-
+# 1 "E:/microController/pic/Puertos.X/Programa.s" 2
 PROCESSOR 12F675
-
-  ; CONFIG
-  CONFIG FOSC = INTRCCLK ; Oscillator Selection bits (INTOSC oscillator: CLKOUT function on GP4/OSC2/CLKOUT pin, I/O function on GP5/OSC1/CLKIN)
-  CONFIG WDTE = OFF ; Watchdog Timer Enable bit (WDT disabled)
-  CONFIG PWRTE = ON ; Power-Up Timer Enable bit (PWRT enabled)
-  CONFIG MCLRE = OFF ; GP3/MCLR pin function select (GP3/MCLR pin function is digital I/O, MCLR internally tied to VDD)
-  CONFIG BOREN = OFF ; Brown-out Detect Enable bit (BOD disabled)
-  CONFIG CP = OFF ; Code Protection bit (Program Memory code protection is disabled)
-  CONFIG CPD = OFF ; Data Code Protection bit (Data memory code protection is disabled)
+ CONFIG FOSC = INTRCCLK ; Oscillator Selection bits (INTOSC oscillator: CLKOUT function on GP4/OSC2/CLKOUT pin, I/O function on GP5/OSC1/CLKIN)
+ CONFIG WDTE = OFF ; Watchdog Timer Enable bit (WDT disabled)
+ CONFIG PWRTE = ON ; Power-Up Timer Enable bit (PWRT enabled)
+ CONFIG MCLRE = OFF ; GP3/MCLR pin function select (GP3/MCLR pin function is digital I/O, MCLR internally tied to VDD)
+ CONFIG BOREN = OFF ; Brown-out Detect Enable bit (BOD disabled)
+ CONFIG CP = OFF ; Code Protection bit (Program Memory code protection is disabled)
+ CONFIG CPD = OFF ; Data Code Protection bit (Data memory code protection is disabled)
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.inc" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\xc.inc" 1 3
 
 
 
@@ -933,9 +929,19 @@ addfsr FSR1,stk_offset
 stk_offset SET 0
 auto_size SET 0
 ENDM
-# 7 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.inc" 2 3
-# 15 "Programa.asm" 2
+# 7 "C:\\Program Files\\Microchip\\xc8\\v2.50\\pic\\include\\xc.inc" 2 3
+# 11 "E:/microController/pic/Puertos.X/Programa.s" 2
+ PSECT MyCode,class=CODE,delta=2
 
-  ORG 0
-  movlw 255
+MyCode:
+  nop
+  nop
+  movlw 0xFF
+  nop
+  nop
+  movlw 0x66
+  nop
+Bucle:
+  nop
+  goto Bucle
   END
